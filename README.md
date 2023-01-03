@@ -1,2 +1,2 @@
-# node-api-vercel
-Express-js app (node) deployment on Vercel (production level)
+# BaleFactory
+Node/ express-js app deployment on Vercel (production level)
