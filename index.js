@@ -8,6 +8,7 @@ const AdminproductRouter = require('./routes/admin/products');
 
 
 const app = express();
+const port = process.env.PORT || 3000
 
 app.use(express.static('public'));
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -22,6 +23,6 @@ app.use(cartsRouter);
 app.use(productRouter);
 app.use(AdminproductRouter);
 
-app.listen(3000, () => {
-    console.log('Listening');
+app.listen(port, () => {
+    console.log(`istening on ${port)`;
 })
