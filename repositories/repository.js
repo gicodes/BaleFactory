@@ -1,11 +1,11 @@
 const crypto = require('crypto');
 
-import { readFileSync } from 'fs';
+const fs = import { readFileSync } from 'fs';
 import path from 'path';
 
 export default function handler(req, res) {
-  const fs = path.join(process.cwd(), 'files');
-  const stringified = readFileSync(fs, 'utf8');
+  const file = path.join(process.cwd(), 'files');
+  const stringified = readFileSync(file, 'utf8');
 
   res.setHeader('Content-Type', 'application/json');
   return res.end(stringified);
