@@ -24,5 +24,5 @@ app.use(productRouter);
 app.use(AdminproductRouter);
 
 app.listen(port, () => {
-    console.log(`istening on ${port)`;
+    console.log(`Listening on ${port}`);
 })
