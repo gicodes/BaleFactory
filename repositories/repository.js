@@ -1,4 +1,5 @@
 const crypto = require('crypto');
+
 import { readFileSync } from 'fs';
 import path from 'path';
 
