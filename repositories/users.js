@@ -27,9 +27,6 @@ class UsersRepo extends Repository {
 
     async comparePasswords(saved, input) {
 
-        // saved -> password saved in our database. 'hash.salt'
-        // input -> password input by this.user trying sign-in
-
         const [hashed, salt] = saved.split('.');
         const hashedInput = await scrypt(input, salt, 64);
 
