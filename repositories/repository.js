@@ -1,5 +1,4 @@
 const crypto = require('crypto');
-const path = require('path');
 const fs = require('fs');
 
 
@@ -9,7 +8,6 @@ module.exports = class Repository {
             throw new Error('Creating a repository requires a filename');
         }
         
-        filename = path.join(process.cwd(), 'files');
         this.filename = filename;
 
         try {
