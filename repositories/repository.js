@@ -9,7 +9,7 @@ module.exports = class Repository {
             throw new Error('Creating a repository requires a filename');
         }
         
-        const filename = path.join(process.cwd(), 'files');
+        filename = path.join(process.cwd(), 'files');
         this.filename = filename;
 
         try {
