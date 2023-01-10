@@ -37,11 +37,6 @@ module.exports = ({ content }) => {
                 <img src="/images/banner.jpg" />
               </div>
             </div>
-            <div>
-              <a href="/">
-                <p class="subtitle">Click here to read more on Bale Factory</p>
-              </a>
-            </div>
           </section>
 
           <section>
