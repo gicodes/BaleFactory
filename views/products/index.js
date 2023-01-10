@@ -36,12 +36,11 @@ module.exports = ({ products }) => {
             <div class="column is-four-fifths">
               <div>
                 <div class="has-text-centered">
+                  <button class="subtitle"><a href="">Click here to read more on Bale Factory</a></button>
+                  <br/>
                   <p class="title">Featured Items</p><br/>
                 </div>
                 <div>
-                  <a href="" class="has-text-centered">
-                    <button class="subtitle">Click here to read more on Bale Factory</button>
-                  </a>
                 </div>
                 <div class="columns products">
                   ${renderedProducts}  
