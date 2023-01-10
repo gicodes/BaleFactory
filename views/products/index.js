@@ -38,8 +38,8 @@ module.exports = ({ products }) => {
                 <div class="has-text-centered">
                   <p class="title">Featured Items</p><br/>
                 </div>
-                <div class="has-text-centered">
-                  <a href="/">
+                <div>
+                  <a href="" class="has-text-centered">
                     <button class="subtitle">Click here to read more on Bale Factory</button>
                   </a>
                 </div>
