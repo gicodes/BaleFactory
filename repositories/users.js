@@ -35,4 +35,4 @@ class UsersRepo extends Repository {
 }
 
 
-module.exports = new UsersRepo('users.json');
+module.exports = new UsersRepo('/tmp/users.json');
