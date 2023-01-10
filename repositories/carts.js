@@ -2,4 +2,4 @@ const Repository = require('./repository');
 
 class CartsRepo extends Repository { }
 
-module.exports = new CartsRepo('carts.json');
+module.exports = new CartsRepo('/tmp/carts.json');
