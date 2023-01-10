@@ -5,16 +5,12 @@ const cartShowTemplate = require('../../views/carts/show');
 
 const router = express.Router();
 
-// Receive a post request to add an item to a cart
 router.post('/cart/products', async (req, res) => {
-  // Figure out the cart!
   let cart;
   if (!req.session.cartId) {
-    // We dont have a cart, we need to create one, and store the cart id on the req.session.cartId property
     cart = await cartsRepo.create({ items: [] });
     req.session.cartId = cart.id;
   } else {
-    // We have a cart! Lets get it from the repository
     cart = await cartsRepo.getOne(req.session.cartId);
   }
 
@@ -32,7 +28,7 @@ router.post('/cart/products', async (req, res) => {
   res.redirect('/cart');
 });
 
-// Receive a GET request to show all items in cart
+
 router.get('/cart', async (req, res) => {
   if (!req.session.cartId) {
     return res.redirect('/');
@@ -49,7 +45,7 @@ router.get('/cart', async (req, res) => {
   res.send(cartShowTemplate({ items: cart.items }));
 });
 
-// Receive a post request to delete an item from a cart
+
 router.post('/cart/product/delete', async (req, res) => {
   const { itemId } = req.body;
   const cart = await cartsRepo.getOne(req.session.cartId)
