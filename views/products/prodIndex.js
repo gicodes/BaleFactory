@@ -15,7 +15,7 @@ module.exports = ({ content }) => {
                 <div class="navbar-item">
                   <div class="navbar-buttons">
                     <div class="navbar-item">
-                      <a href="/"><i class="fa fa-star"></i> Products</a>
+                      <a href="/products"><i class="fa fa-star"></i> Products</a>
                     </div>
                     <div class="navbar-item">
                       <a href="/cart"><i class="fa fa-shopping-cart"></i> Cart</a>
@@ -25,6 +25,14 @@ module.exports = ({ content }) => {
               </div>
             </nav>
           </header>
+          
+          <section class="banner">
+            <div class="container">
+              <div class="columns is-centered">
+                <img src="/images/banner.jpg" />
+              </div>
+            </div>
+          </section>
 
           <section>
            <div class="box">
