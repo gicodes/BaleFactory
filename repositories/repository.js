@@ -1,6 +1,6 @@
 const crypto = require('crypto');
+const path = require('path');
 const fs = require('fs');
-import path from 'path';
 
 
 module.exports = class Repository {
