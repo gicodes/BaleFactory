@@ -1,4 +1,4 @@
-const layout = require('../products/prodIndex');
+const layout = require('../products/frontindex');
 
 module.exports = ({ products }) => {
   const renderedProducts = products

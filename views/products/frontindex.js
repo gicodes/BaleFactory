@@ -20,10 +20,7 @@ module.exports = ({ content }) => {
                 <div class="navbar level">
                   <div class="level-right">
                     <div class="navbar-item">
-                      <a href="/products"><i class="fa fa-user"></i> Login</a>
-                    </div>
-                    <div class="navbar-item">
-                      <a href="/cart"><i class="fa fa-shopping-cart"></i> Cart</a>
+                      <a href="/signin"><i class="fa fa-user"></i> Login</a>
                     </div>
                   </div>
                 </div>
