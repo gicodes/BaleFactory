@@ -1,4 +1,4 @@
-const layout = require('../products/prodIndex');
+const layout = require('../admin/layouts');
 
 module.exports = ({ products }) => {
   const renderedProducts = products
@@ -29,28 +29,13 @@ module.exports = ({ products }) => {
 
   return layout({
     content: `
-      <section>
-        <div class="container">
-          <div class="columns">
-            <div class="column "></div>
-            <div class="column is-four-fifths">
-              <div>
-                <div class="has-text-centered">
-                  <button class="subtitle"><a href="">Click here to read more on Bale Factory</a></button>
-                  <br/>
-                  <p class="title">Featured Items</p><br/>
-                </div>
-                <div>
-                </div>
-                <div class="columns products">
-                  ${renderedProducts}  
-                </div>
-              </div>
-            </div>
-            <div class="column "></div>
+      <div class="container">
+        <div class="columns">
+          <div class="columns products">
+            ${renderedProducts}  
           </div>
         </div>
-      </section>
+      </div>
     `
   });
 };
