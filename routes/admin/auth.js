@@ -29,8 +29,8 @@ router.post(
 		const { email, password } = req.body;
 		const user = await usersRepo.create({ email, password });
 		// res.send(`Account Created! \n Your id is: ${req.session.userId}`);
-		res.redirect('/admin/products');
 		req.session.userId = user.id;
+		res.redirect('/user/{user.id}/');
 	});
 
 router.get('/signin', (req, res) => {
@@ -46,7 +46,7 @@ router.post(
 		const { email } = req.body;
 		const user = await usersRepo.getOneBy({ email });
 		req.session.userId = user.id;
-		res.redirect('/admin/products');
+		res.redirect('/user/{user.id}/');
 	})
 
 router.get('/signout', (req, res) => {

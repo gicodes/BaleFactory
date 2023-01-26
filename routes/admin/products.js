@@ -11,19 +11,19 @@ const { requireTitle, requirePrice } = require('./validators');
 const router = express.Router();
 const upload = multer({ storage: multer.memoryStorage() })
 
-router.get('/seller/products', authUser,
+router.get('/products', authUser,
     async (req, res) => {
 
         const products = await productsRepo.getAll();
         res.send(productsIndexTemp({ products }))
     });
 
-router.get('/seller/products/new', authUser,
+router.get('/products/create', authUser,
     (req, res) => {
         res.send(productsNewTemp({}))
     });
 
-router.post('/seller/products/new', authUser,
+router.post('/products/create', authUser,
     upload.single('image'),
     [requireTitle, requirePrice],
     handleErrors(productsNewTemp),
@@ -35,7 +35,7 @@ router.post('/seller/products/new', authUser,
         res.redirect('/admin/products');
     });
 
-router.get('/seller/products/:id/edit', authUser,
+router.get('/products/:id/edit', authUser,
     async (req, res) => {
         const product = await productsRepo.getOne(req.params.id)
 
@@ -46,7 +46,7 @@ router.get('/seller/products/:id/edit', authUser,
         res.send(productsEditTemp({ product }))
     });
 
-router.post('/seller/products/:id/edit', authUser,
+router.post('/products/:id/edit', authUser,
     upload.single('image'),
     [requireTitle, requirePrice],
     handleErrors(productsEditTemp, async req => {
@@ -70,7 +70,7 @@ router.post('/seller/products/:id/edit', authUser,
         res.redirect('/admin/products')
     });
 
-router.post('/seller/products/:id/delete', authUser,
+router.post('/products/:id/delete', authUser,
     async (req, res) => {
         await productsRepo.delete(req.params.id);
 

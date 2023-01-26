@@ -30,11 +30,11 @@ module.exports = ({ content }) => {
 							</div>
 							<div>
 								<ul class="social">
+									<li><a href="https://github.com/gicodes"><i class="fab fa-github"></i></a></li>
 									<li><a href=""><i class="fab fa-facebook"></i></a></li>
-									<li><a href=""><i class="fab fa-twitter"></i></a></li>
-									<li><a href=""><i class="fab fa-linkedin"></i></a></li>
+									<li><a href="https://linkedin.com/in/gideon-iduma-5311445a"><i class="fab fa-linkedin"></i></a></li>
 									<li><a href=""><i class="fab fa-dribbble"></i></a></li>
-									<li><a href=""><i class="fab fa-google-plus"></i></a></li>
+									<li><a href="https://twitter.com/pappichino"><i class="fab fa-twitter"></i></a></li>
 								</ul>
 							</div>
 						</div>

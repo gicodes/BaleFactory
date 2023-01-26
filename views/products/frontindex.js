@@ -1,6 +1,7 @@
 const layout = require('../admin/layouts');
+const products = require('../products/index');
 
-module.exports = ({ content }) => {
+module.exports = ({ content, product }) => {
   return layout({
     content: `
         <body>
@@ -20,17 +21,13 @@ module.exports = ({ content }) => {
                 <div class="navbar level">
                   <div class="level-right">
                     <div class="navbar-item">
-                      <a href="/products"><i class="fa fa-user"></i> Login</a>
-                    </div>
-                    <div class="navbar-item">
-                      <a href="/cart"><i class="fa fa-shopping-cart"></i> Cart</a>
+                      <a href="/signin"><i class="fa fa-user"></i> Login</a>
                     </div>
                   </div>
                 </div>
               </div>
             </nav>
-          </header>
-          
+          </header>  
           <section class="banner">
             <div class="container">
               <div class="columns is-centered">
@@ -38,15 +35,10 @@ module.exports = ({ content }) => {
               </div>
             </div>
           </section>
-
-          <section>
-           <div class="box">
-            ${content}
-           </div>
-          </section>
         </body>
-      </html>
       `
+
   })
+
 
 };
