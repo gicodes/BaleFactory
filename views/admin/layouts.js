@@ -15,21 +15,19 @@ module.exports = ({ content }) => {
 				<header>
 					<nav class="navbar navbar-top vert-space">
 						<div class="container navbar-container">
-							<div>
-								<div class="social">
-									<li>
-										<a href=""><i class="fa fa-phone"> </i> +234 807 250 9794</a>
-									</li>
-									<li>
-										<a href=""><i class="fa fa-envelope"></i> gicodes9@gmail.com</a>
-									</li>
-									<li>
-										<a href=""><i class="fa fa-wallet"></i> balefactory@gicode.ng</a>
-									</li>
+							<div class="social is-size-6">
+								<div class="level-items">
+									<div class="level-item">
+										<a href="/products"><i class="fa fa-star"></i> Products</a>
+									</div>
+									<br />
+									<div class="level-item">
+										<a href="/cart"><i class="fa fa-shopping-cart"></i> Cart</a>
+									</div>
 								</div>
 							</div>
 							<div>
-								<ul class="social">
+								<ul class="social is-size-5">
 									<li><a href="https://github.com/gicodes"><i class="fab fa-github"></i></a></li>
 									<li><a href=""><i class="fab fa-facebook"></i></a></li>
 									<li><a href="https://linkedin.com/in/gideon-iduma-5311445a"><i class="fab fa-linkedin"></i></a></li>
@@ -41,11 +39,26 @@ module.exports = ({ content }) => {
 					</nav>
 				</header>
 
-
 				<div class="container">
 					${content}
 				</div>
 				
+				<footer>
+					<nav class="navbar navbar-top vert-space">
+						<div class="container">
+							<div class="level-right">
+								<ul class="social is-size-5">
+									<li><a href="https://github.com/gicodes"><i class="fab fa-github"></i></a></li>
+									<li><a href=""><i class="fab fa-facebook"></i></a></li>
+									<li><a href="https://linkedin.com/in/gideon-iduma-5311445a"><i class="fab fa-linkedin"></i></a></li>
+									<li><a href=""><i class="fab fa-dribbble"></i></a></li>
+									<li><a href="https://twitter.com/pappichino"><i class="fab fa-twitter"></i></a></li>
+								</ul>
+							</div>
+						</div>
+					</nav>
+				</footer>
+
 			</body>
 	  </html>
 	`;

@@ -29,13 +29,31 @@ module.exports = ({ products }) => {
 
   return layout({
     content: `
-      <div class="container">
-        <div class="columns">
-          <div class="columns products">
-            ${renderedProducts}  
+      <body>
+        <div class="box">
+          <div class="container'>
+
+            <section class="banner">
+              <div class="container">
+                <div class="columns is-centered">
+                  <img src="/images/banner.jpg" />
+                </div>
+              </div>
+            </section>
+
+            <hr/>
+
+            <section class="container">
+              <div class="columns">
+                <div class="columns products">
+                  ${renderedProducts}  
+                </div>
+              </div>
+            </section>
+
           </div>
         </div>
-      </div>
+      </body>
     `
   });
 };

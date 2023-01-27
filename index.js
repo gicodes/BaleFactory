@@ -6,7 +6,6 @@ const productRouter = require('./routes/user/products')
 const cartsRouter = require('./routes/user/carts');
 const AdminproductRouter = require('./routes/admin/products');
 
-
 const app = express();
 const port = process.env.PORT || 3000;
 

@@ -1,18 +1,21 @@
 const crypto = require('crypto');
+const path = require('path')
 const fs = require('fs');
 
 
 module.exports = class Repository {
+
     constructor(filename) {
         if (!filename) {
             throw new Error('Creating a repository requires a filename');
         }
-        
-        this.filename = filename;
+
+        this.filename = path.join(process.cwd(), filename);
 
         try {
             fs.accessSync(this.filename);
         }
+
         catch (err) {
             fs.writeFileSync(this.filename, '[]');
         }
