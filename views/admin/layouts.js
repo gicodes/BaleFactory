@@ -29,9 +29,9 @@ module.exports = ({ content }) => {
 							<div>
 								<ul class="social is-size-5">
 									<li><a href="https://github.com/gicodes"><i class="fab fa-github"></i></a></li>
-									<li><a href=""><i class="fab fa-facebook"></i></a></li>
+									<li><a href="/"><i class="fab fa-facebook"></i></a></li>
 									<li><a href="https://linkedin.com/in/gideon-iduma-5311445a"><i class="fab fa-linkedin"></i></a></li>
-									<li><a href=""><i class="fab fa-dribbble"></i></a></li>
+									<li><a href="/"><i class="fab fa-dribbble"></i></a></li>
 									<li><a href="https://twitter.com/pappichino"><i class="fab fa-twitter"></i></a></li>
 								</ul>
 							</div>
@@ -43,22 +43,6 @@ module.exports = ({ content }) => {
 					${content}
 				</div>
 				
-				<footer>
-					<nav class="navbar navbar-top vert-space">
-						<div class="container">
-							<div class="level-right">
-								<ul class="social is-size-5">
-									<li><a href="https://github.com/gicodes"><i class="fab fa-github"></i></a></li>
-									<li><a href=""><i class="fab fa-facebook"></i></a></li>
-									<li><a href="https://linkedin.com/in/gideon-iduma-5311445a"><i class="fab fa-linkedin"></i></a></li>
-									<li><a href=""><i class="fab fa-dribbble"></i></a></li>
-									<li><a href="https://twitter.com/pappichino"><i class="fab fa-twitter"></i></a></li>
-								</ul>
-							</div>
-						</div>
-					</nav>
-				</footer>
-
 			</body>
 	  </html>
 	`;
