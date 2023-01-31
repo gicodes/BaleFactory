@@ -10,9 +10,9 @@ module.exports = ({ errors }) => {
             <div class="column is-one-quarter">
               <div class="box">
                 <form method="POST">
-                  <h1 class="title has-text-centered">
-                    Sign in
-                  </h1>
+                  <div class="notification has-text-centered">
+                    <h1 class='title'>Sign in</h1>
+                  </div>
                   <div class="field">
                     <label class="label">Email</label>
                     <input required class="input" placeholder="Email" name="email" />

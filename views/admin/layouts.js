@@ -15,29 +15,21 @@ module.exports = ({ content }) => {
 				<header>
 					<nav class="navbar navbar-top vert-space">
 						<div class="container navbar-container">
-							<div class="social is-size-6">
-								<div class="level-items">
-									<div class="level-item">
-										<a href="/products"><i class="fa fa-star"></i> Products</a>
-									</div>
-									<br />
-									<div class="level-item">
-										<a href="/cart"><i class="fa fa-shopping-cart"></i> Cart</a>
-									</div>
+							<div class="navbar-end">
+								<div class="navbar-item">
+									<ul class="social is-size-5">
+										<li><a href="https://github.com/gicodes"><i class="fab fa-github"></i></a></li>
+										<li><a href="/"><i class="fab fa-facebook"></i></a></li>
+										<li><a href="https://linkedin.com/in/gideon-iduma-5311445a"><i class="fab fa-linkedin"></i></a></li>
+										<li><a href="/"><i class="fab fa-dribbble"></i></a></li>
+										<li><a href="https://twitter.com/pappichino"><i class="fab fa-twitter"></i></a></li>
+									</ul>
 								</div>
-							</div>
-							<div>
-								<ul class="social is-size-5">
-									<li><a href="https://github.com/gicodes"><i class="fab fa-github"></i></a></li>
-									<li><a href="/"><i class="fab fa-facebook"></i></a></li>
-									<li><a href="https://linkedin.com/in/gideon-iduma-5311445a"><i class="fab fa-linkedin"></i></a></li>
-									<li><a href="/"><i class="fab fa-dribbble"></i></a></li>
-									<li><a href="https://twitter.com/pappichino"><i class="fab fa-twitter"></i></a></li>
-								</ul>
 							</div>
 						</div>
 					</nav>
 				</header>
+
 
 				<div class="container">
 					${content}
