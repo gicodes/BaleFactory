@@ -1,5 +1,5 @@
 body {
-  --primary: #909090;
+  --primary: #DAA520;
   --secondary: #9e4770;
   --white: #fbfbfb;
   --dark: #2e2532;
@@ -7,6 +7,7 @@ body {
 }
 
 .product-card figure {
+  background-color: 'black';
   text-align: center;
   padding: 5px;
 }
