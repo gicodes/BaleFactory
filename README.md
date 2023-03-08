@@ -9,8 +9,8 @@
 - Users can easily interact with products: remove or add items to cart.
 - User Authentication and Validation is simple, swift and secure.
 - Cookie-session is a key dependency for multi-purpose caching.
-- Multer is a key dependency for file parsing (image uploads).
-- Admin link gives an end user the function to create and modify products.
+- Multer is a key dependency for file parsing and image uploads.
+- Admin link gives an end user function to create and modify products.
 
 ### Application Scalability
 
