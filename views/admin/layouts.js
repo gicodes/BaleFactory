@@ -12,29 +12,38 @@ module.exports = ({ content }) => {
 			</head>
 		
 			<body>
-				<header>
-					<nav class="navbar navbar-top vert-space">
-						<div class="container navbar-container">
-							<div class="navbar-end">
-								<div class="navbar-item">
-									<ul class="social is-size-5">
-										<li><a href="https://github.com/gicodes"><i class="fab fa-github"></i></a></li>
-										<li><a href="/"><i class="fab fa-facebook"></i></a></li>
-										<li><a href="https://linkedin.com/in/gideon-iduma-5311445a"><i class="fab fa-linkedin"></i></a></li>
-										<li><a href="/"><i class="fab fa-dribbble"></i></a></li>
-										<li><a href="https://twitter.com/pappichino"><i class="fab fa-twitter"></i></a></li>
-									</ul>
-								</div>
-							</div>
-						</div>
-					</nav>
-				</header>
-
+				<div class="bulma-center-mixin-parent">
 
 				<div class="container">
 					${content}
 				</div>
 				
+				<section class="hero">
+					<div class="hero-body">
+						
+						<div class="container has-text-centered">
+							This website is obsolete and can be used as a sample site, past project or portfolio 
+						</div>
+
+						<br/>
+
+						<footer class="container">
+							<div class="notification is-primary">
+							<nav class="level social is-size-4">
+								<div class="level-item has-text-centered"><a href="https://github.com/gicodes"><i class="fab fa-github"></i></a></div>
+											
+								<div class="level-item has-text-centered"><a href="/"><i class="fab fa-facebook"></i></a></div>
+											
+								<div class="level-item has-text-centered"><a href="https://linkedin.com/in/gideon-iduma-5311445a"><i class="fab fa-linkedin"></i></a></div>
+											
+								<div class="level-item has-text-centered"><a href="/"><i class="fab fa-dribbble"></i></a></div>
+											
+								<div class="level-item has-text-centered"><a href="https://twitter.com/pappichino"><i class="fab fa-twitter"></i></a></div>
+							</nav>
+							</div>
+						</footer>
+					</div>
+				</section>
 			</body>
 	  </html>
 	`;

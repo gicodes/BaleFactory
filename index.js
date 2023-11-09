@@ -1,10 +1,10 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const cookieSession = require('cookie-session');
-const authRouter = require('./routes/admin/auth')
-const productRouter = require('./routes/user/products')
-const cartsRouter = require('./routes/user/carts');
-const AdminproductRouter = require('./routes/admin/products');
+const authRouter = require('./controller/routes/admin/auth')
+const productRouter = require('./controller/routes/user/products')
+const cartsRouter = require('./controller/routes/user/carts');
+const AdminproductRouter = require('./controller/routes/admin/products');
 
 const app = express();
 const port = process.env.PORT || 3000;

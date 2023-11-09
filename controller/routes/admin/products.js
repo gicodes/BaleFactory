@@ -2,10 +2,10 @@ const express = require('express');
 const multer = require('multer');
 
 const { handleErrors, authUser } = require('./middlewares')
-const productsRepo = require('../../repositories/products')
-const productsNewTemp = require('../../views/admin/products/new')
-const productsEditTemp = require('../../views/admin/products/edit')
-const productsIndexTemp = require('../../views/admin/products/indexpro')
+const productsRepo = require('../../../model/repositories/products')
+const productsNewTemp = require('../../../views/admin/products/new')
+const productsEditTemp = require('../../../views/admin/products/edit')
+const productsIndexTemp = require('../../../views/admin/products/indexpro')
 const { requireTitle, requirePrice } = require('./validators');
 
 const router = express.Router();

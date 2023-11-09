@@ -1,9 +1,9 @@
 const express = require('express');
-const usersRepo = require('../../repositories/users');
+const usersRepo = require('../../../model/repositories/users');
 
 const { handleErrors } = require('./middlewares');
-const signupTemplate = require('../../views/admin/auth/signup');
-const signinTemplate = require('../../views/admin/auth/signin');
+const signupTemplate = require('../../../views/admin/auth/signup');
+const signinTemplate = require('../../../views/admin/auth/signin');
 
 const {
 	requireEmail,
