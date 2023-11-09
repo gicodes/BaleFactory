@@ -153,3 +153,10 @@ body {
 .vert-space {
   padding: 1em;
 }
+
+.horispace {
+  margin-left: 2em;
+  margin-right: 2em;
+  padding-left: 1em;
+  padding-right: 1em;
+}
