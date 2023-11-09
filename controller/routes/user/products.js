@@ -1,6 +1,6 @@
 const express = require('express');
-const productsRepo = require('../../repositories/products');
-const productsIndexTemp = require('../../views/products/prod+index')
+const productsRepo = require('../../../model/repositories/products');
+const productsIndexTemp = require('../../../views/products/prod+index')
 
 
 const router = express.Router();
